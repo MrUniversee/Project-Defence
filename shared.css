@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-400: #04b2d9;
+  --primary-300: #0378a6;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* footer  */
+footer {
+  background: #000;
+  text-align: center;
+  padding-top: 2.5rem;
+  border-top: 5px solid var(--primary-300);
+}
+
+footer .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-heading {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  text-align: left;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  border-radius: 7px;
+}
+
+.footer-heading h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.footer-heading p {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-heading a.btn {
+  background: #333;
+  padding: 10px 12px;
+  border: none;
+  color: #fff;
+}
+
+.newsletter {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1rem;
+  color: #fff;
+}
+
+.newsletter h3 {
+  font-size: 1.5rem;
+}
+
+.newsletter p {
+  font-weight: 400;
+}
+
+input {
+  padding: 7px 10px;
+  background: rgb(255, 251, 251);
+  border: none;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  margin: 7px 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.copyright {
+  min-width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 1rem 0;
+  border-top: 2px solid var(--primary-300);
+}
+
+.newsletter a[target].cta {
+  padding: 4.75px 10px;
+  background: var(--primary-400);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 48em) {
+  .footer-heading {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-heading a.btn {
+    margin: 0;
+  }
+  .newsletter {
+    text-align: center;
+  }
+}
+
+.return {
+  margin-left: 10px;
+}
+
+.return .btn {
+  background: var(--primary-300);
+  border: none;
+  color: #fff;
+}

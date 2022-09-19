@@ -1,0 +1,145 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+} */
+
+:root {
+  --primary-400: #04b2d9;
+  --primary-300: #0378a6;
+}
+
+#contact .container {
+  width: 80%;
+  display: flex;
+  margin: 20px auto;
+  gap: 3rem;
+  padding: 3rem 5rem;
+  background: var(--primary-400);
+  border-radius: 10px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.contact-wrapper p {
+  margin: 10px 0;
+}
+
+.contact-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact-header p {
+  color: #f4f4f4;
+  width: 65%;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: lightblue;
+}
+
+.socials {
+  display: flex;
+  gap: 30px;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.form {
+  background: #fff;
+  padding: 1.5rem;
+  /* flex: 1; */
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+a.btn {
+  text-decoration: none;
+  color: #000;
+  background: transparent;
+  border: 2px solid var(--primary-400);
+  padding: 10px 25px;
+  display: inline-block;
+  margin-top: 1.3rem;
+  border-radius: 5px;
+  transition: 0.2s;
+  text-align: center;
+}
+
+a.btn:hover {
+  background: var(--primary-300);
+  border: 1px solid var(--primary-300);
+  color: #fff;
+}
+
+/* input {
+  width: 100%;
+  padding: 7px 10px;
+  background: red;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.875rem;
+} */
+
+input:focus {
+  outline: none;
+}
+
+.form input {
+  max-width: 100%;
+  padding: 7px 10px;
+  background: rgb(204, 204, 204, 0.5);
+  border: none;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  margin: 7px 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 7px;
+  background: rgb(204, 204, 204, 0.3);
+  border: none;
+}
+
+.cta {
+  text-align: end;
+}
+
+@media (max-width: 48rem) {
+  #contact .container {
+    padding: 1rem;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .contact-header {
+    text-align: center;
+  }
+
+  .contact-header p,
+  .form {
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+#hero {
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5)),
+    url(./img/edvin-johansson-rlwE8f8anOc-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  padding-top: 20px;
+  mix-blend-mode: color-dodge;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "DM Serif Display", serif;
+}
+
+#hero nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+#hero nav li {
+  list-style: none;
+}
+
+#hero nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  transition: 0.2s ease;
+}
+
+#hero nav a:hover {
+  background: var(--primary-300);
+}
+
+.hero-intro {
+  padding-top: 100px;
+  color: #fff;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  border-bottom: 3px solid var(--primary-400);
+  margin-bottom: 0.5em;
+  font-family: "DM Serif Display", serif;
+}
+
+.hero-content p {
+  width: 60%;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  vertical-align: middle;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0.375rem;
+}
+
+#hero-cta {
+  margin-top: 20px;
+}
+
+.cta-btn {
+  border: 2px solid var(--primary-400);
+}
+
+.cta-btn:hover {
+  background: var(--primary-300);
+  border: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#services {
+  background: #f5f5f5;
+  padding: 2.5rem 0;
+}
+
+.services-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-top: 1rem;
+}
+
+.services-header {
+  margin-bottom: 2rem;
+}
+
+.services-header h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#services p {
+  font-weight: 300;
+  line-height: 1.5;
+  color: #333;
+}
+
+.services-box .card {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.services-box .card:hover {
+  cursor: pointer;
+  box-shadow: 6px 4px 9px 1px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 6px 4px 9px 1px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 6px 4px 9px 1px rgba(0, 0, 0, 0.24);
+}
+
+.card {
+  box-shadow: 6px 4px 9px 1px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 6px 4px 9px 1px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 6px 4px 9px 1px rgba(0, 0, 0, 0.24);
+  border: none;
+  background: #fff;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-body a {
+  background: var(--primary-400);
+  border: none;
+  margin: 10px 0;
+}
+
+.card-body a.btn:hover {
+  background: var(--primary-300);
+  border: none;
+}
+
+#gallery {
+  text-align: center;
+}
+
+@media (max-width: 48rem) {
+  .services-box {
+    grid-template-columns: 1fr;
+  }
+
+  .services-box .card {
+    width: 100%;
+  }
+
+  #hero {
+    height: 75vh;
+    overflow: hidden;
+  }
+
+  #hero .container .menu-btn {
+    display: flex;
+  }
+
+  #hero-cta {
+    text-align: center;
+  }
+
+  .hero-intro {
+    text-align: center;
+    padding-top: 5rem;
+  }
+
+  .hero-content p {
+    width: 100%;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  #hero nav {
+    display: none;
+  }
+
+  #side-drawer {
+    min-width: 100%;
+  }
+
+  #side-drawer header .menu-btn {
+    display: flex;
+  }
+
+  .testimonial-body {
+    flex-direction: column;
+  }
+
+  .footer-heading {
+    flex-direction: column;
+  }
+}
+
+/* SIDE DRAWER */
+.menu-btn {
+  width: 2rem;
+  height: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+#side-drawer {
+  width: 30%;
+  height: 100%;
+  background: #333;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+#side-drawer:target {
+  display: block;
+  z-index: 99;
+}
+
+#side-drawer header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+#side-drawer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+#side-drawer li {
+  margin: 1rem 0;
+}
+
+#side-drawer a {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+}
+#side-drawer a:hover {
+  color: var(--primary-400);
+  border-bottom: 2px solid var(--primary-400);
+  font-size: 2em;
+  text-decoration: none;
+}
+
+/* SIDE DRAWER END */
+
+/* Testimonial  */
+
+#testimonials {
+  padding: 2.5rem 0;
+}
+
+.testimonial-header {
+  margin-bottom: 2rem;
+}
+
+.testimonial-body {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 1.5rem;
+}
+
+.testimonial-content {
+  padding: 1rem;
+  border-top: 2px solid var(--primary-300);
+  transition: 0.3s ease;
+}
+
+.testimonial-content:hover {
+  transform: translateY(-15px);
+}
+
+.testimonial-content h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.testimonial-content p::before {
+  content: open-quote;
+  font-size: 1.5rem;
+}
+
+.testimonial-content p::after {
+  content: close-quote;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: -3px;
+  margin-left: 3px;
+}
+
+.testimonial-content p {
+  margin: 2rem 0;
+  font-weight: 300;
+  color: rgb(85, 85, 85);
+  position: relative;
+}
+
+.testimonial-image {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial-image img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+small {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: rgb(85, 85, 85);
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
